@@ -11,6 +11,13 @@ text = ‘This is a sentence that you would like to display.’
 print(text)
 ```
 
+## Directory
+
+[Programs](code)
+
+[Data files](data)
+
+[References](references)
 
 
-> "...to boldly go where no one has gone before."
+
