@@ -2,6 +2,12 @@ from pathlib import Path
 
 from qualifier.utils.fileio import load_csv
 
+from qualifier.filters.max_loan_size import filter_max_loan_size
+from qualifier.filters.credit_score import filter_credit_score
+from qualifier.filters.debt_to_income import filter_debt_to_income
+from qualifier.filters.loan_to_value import filter_loan_to_value
+
+
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
@@ -11,40 +17,6 @@ from qualifier.utils.calculators import (
 def load_bank_data(file_path):
     csvpath = Path(file_path)
     return load_csv(csvpath)
-
-
-def filter_max_loan_size(loan_amount, bank_list):
-    loan_size_approval_list = []
-
-    for bank in bank_list:
-        if loan_amount <= int(bank[1]):
-            loan_size_approval_list.append(bank)
-    return loan_size_approval_list
-
-
-def filter_credit_score(credit_score, bank_list):
-    credit_score_approval_list = []
-    for bank in bank_list:
-        if credit_score >= int(bank[4]):
-            credit_score_approval_list.append(bank)
-    return credit_score_approval_list
-
-
-def filter_debt_to_income(monthly_debt_ratio, bank_list):
-    debit_to_income_approval_list = []
-    for bank in bank_list:
-        if monthly_debt_ratio <= float(bank[3]):
-            debit_to_income_approval_list.append(bank)
-    return debit_to_income_approval_list
-
-
-def filter_loan_to_value(loan_to_value_ratio, bank_list):
-    loan_to_value_approval_list = []
-
-    for bank in bank_list:
-        if loan_to_value_ratio <= float(bank[2]):
-            loan_to_value_approval_list.append(bank)
-    return loan_to_value_approval_list
 
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
