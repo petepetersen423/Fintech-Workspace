@@ -1,11 +1,12 @@
 from pathlib import Path
 import fire
+import questionary
 
 from qualifier.utils.fileio import load_csv, save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
-    calculate_loan_to_value_ratio
+    calculate_loan_to_value_ratio,
 )
 
 from qualifier.filters.max_loan_size import filter_max_loan_size
@@ -75,7 +76,7 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
 
-    csvpath = Path('qualifying_loans.csv')
+    csvpath = Path("qualifying_loans.csv")
     save_csv(csvpath, qualifying_loans)
 
 
