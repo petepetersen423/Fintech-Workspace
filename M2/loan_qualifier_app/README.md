@@ -53,6 +53,7 @@ Pete Petersen
 
 Python Software Foundation. Python Language Reference, version 3.7. Available at [python.org](http://www.python.org)
 [Python Standard Library](https://docs.python.org/3/library/index.html)
+
 Pepperdine Loan Qualifier App fileio.py [Adding in Fire to Loan Qualifier App](https://courses.bootcampspot.com/courses/1103/files/1264429/download)
 
 ## License
