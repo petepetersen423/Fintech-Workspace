@@ -90,33 +90,47 @@ MIT
     """Saves the qualifying loans to a CSV file.
 
     Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
+        qualifying_loans (list): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
 
     while True:
-        csv_file_name = questionary.text(
-            "Enter the path and name for the file to save?"
+        save_y_n = questionary.confirm(
+            "Would you like to save the file?", default=True
         ).ask()
-        if len(csv_file_name) > 1:
+        if save_y_n:
             break
 
-    while True:
-        header_option = questionary.text("Would you like a header (y/n)").ask()
-        if header_option == "y" or header_option == "n":
-            break
+    if save_y_n:
 
-    qualifying_loans_header = [
-        "Lender",
-        "Max Loan" "Amount",
-        "Max LTV",
-        "Max DTI",
-        "Min Credit Score",
-        "Interest Rate",
-    ]
-    if header_option == "n":
-        save_csv(csv_file_name, qualifying_loans, header=None)
+        while True:
+            csv_file_name = questionary.text(
+                "Enter the path and name for the file to save?",
+                default="./data/my_qualifying_loans.csv",
+            ).ask()
+            if len(csv_file_name) > 1:
+                break
+
+        while True:
+            header_option = questionary.confirm(
+                "Would you like a header?", default=True
+            ).ask()
+            if header_option:
+                qualifying_loans_header = [
+                    "Lender",
+                    "Max Loan" "Amount",
+                    "Max LTV",
+                    "Max DTI",
+                    "Min Credit Score",
+                    "Interest Rate",
+                ]
+                break
+
+    if header_option:
+        save_csv(
+            csv_file_name, qualifying_loans, header_option == qualifying_loans_header
+        )
     else:
-        save_csv(csv_file_name, qualifying_loans, header=qualifying_loans_header)
+        save_csv(csv_file_name, qualifying_loans, header_option == None)
 ```
