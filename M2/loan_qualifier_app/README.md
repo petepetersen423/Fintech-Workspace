@@ -2,10 +2,8 @@
 
 ![Loan Qualifier Prompts](Images/loan_qual_logo.jpg)
 
-Loan Qualifier is an applications designed to quickly and easily retrieve a list of loans for which they are qualified.  The applications will prompt the user for input the application need in order to make the retieval of the qualifying loans.   Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.
+Loan Qualifier is an applications designed to quickly and easily retrieve a list of loans for which they are qualified.  The applications will prompt the user for input the application need in order to make the retieval of the qualifying loans.   The application will ask the user for location of thr `daily_rate_sheet` of loans from various lenders.  Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.
 
-
- The application works by taking in a `daily_rate_sheet` of loan criteria from various loan providers, asking the user a number of questions to evaluate their loan eligibility, and then returning to them a list of qualifying loans.  
 ---
 
 ## Technologies
@@ -42,9 +40,6 @@ python app.py
 Upon launching the loan qualifier application you will be greeted with the following prompts.
 
 ![Loan Qualifier Prompts](Images/loan_qalifier.png)
-
-
-
 
 ---
 
