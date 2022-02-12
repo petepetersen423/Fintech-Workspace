@@ -32,14 +32,15 @@ def load_csv(csvpath):
 
 # PP 02/11/2022 - added function to save a CSV based on user requirements
 # PP 02/12/2022 - modified docstring
-# PP 02/02/2022 - added cition for for referenced code
+# PP 02/02/2022 - added cition in doc string forreferenced code
 
 
 def save_csv(csvpath, list, header_option=None):
     """
-    Write a CSV that contains the rows in the supplied lists.  
-    This function was modeled on save_csv in the adding 
-    fire_to_the_Loan_Qualifier_App
+    Write a CSV that contains the rows in the supplied lists.
+    This function was modeled on save_csv in the adding
+    fire_to_the_Loan_Qualifier_App unit 2.3.4.
+    (https://courses.bootcampspot.com/courses/1103/files/1264429/download)
 
     Args:
         csvpath (Path): The file path.
