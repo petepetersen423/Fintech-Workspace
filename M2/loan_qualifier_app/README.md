@@ -38,11 +38,13 @@ Upon launching the loan qualifier application you will be greeted with the follo
 ![Loan Qualifier Prompts](Images/loan_qalifier.png)
 
 
+
+
 ---
 
 ## Contributors
 
-Brought to you by ET Home Loans.
+Pete Petersen
 
 ---
 
