@@ -6,6 +6,9 @@ This is a command line application to match applicants with qualifying loans.
 Example:
     $ python app.py
 """
+from cgitb import small
+import csv
+from email import header
 import sys
 import fire
 import questionary
@@ -111,14 +114,30 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    while True:
+        csv_file_name = questionary.text(
+            "What would you like to name the data file?"
+        ).ask()
+        if len(csv_file_name) > 1:
+            break
 
-    csv_file_name = questionary.text(
-        "What would you like to name the file that contains your data?"
-    ).ask()
-    header_option = questionary.text(
-        "What would you like to name the file that contains your data?"
-    ).ask()
-    save_csv(csv_file_name, qualifying_loans, header=None)
+    while True:
+        header_option = questionary.text("Would you like a header (y/n)").ask()
+        if small(header_option) == "y" or header == "n":
+            break
+
+    qualifying_loans_header = [
+        "Lender",
+        "Max Loan" "Amount",
+        "Max LTV",
+        "Max DTI",
+        "Min Credit Score",
+        "Interest Rate",
+    ]
+    if small(header_option) == "n":
+        save_csv(csv_file_name, qualifying_loans, header=None)
+    else:
+        save_csv(csv_file_name, qualifying_loans, header=qualifying_loans_header)
 
 
 def run():
