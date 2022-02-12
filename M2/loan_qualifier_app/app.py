@@ -123,7 +123,7 @@ def save_qualifying_loans(qualifying_loans):
 
     while True:
         header_option = questionary.text("Would you like a header (y/n)").ask()
-        if small(header_option) == "y" or header == "n":
+        if small(header_option) == "y" or header_option == "n":
             break
 
     qualifying_loans_header = [
