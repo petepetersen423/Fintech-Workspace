@@ -61,3 +61,62 @@ Pepperdine Loan Qualifier App fileio.py [Adding in Fire to Loan Qualifier App](h
 ## License
 
 MIT
+
+## Changes
+
+### 1. Added user requested function to save file in fileio.py
+
+```def save_csv(csvpath, list, header_option=None):
+    """
+    Write a CSV that contains the rows in the supplied lists.  
+    This function was modeled on save_csv in the adding 
+    fire_to_the_Loan_Qualifier_App
+
+    Args:
+        csvpath (Path): The file path.
+        list : A list of the rows of data for the CSV file.
+        header (list): An header for the CSV.
+
+    """
+    with open(csvpath, "w", newline="") as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+        if header_option:
+            csvwriter.writerow(header_option)
+        csvwriter.writerows(list)
+```
+### 2.  Added interactive function for save implementation in app.py
+
+```def save_qualifying_loans(qualifying_loans):
+    """Saves the qualifying loans to a CSV file.
+
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+    # @TODO: Complete the usability dialog for savings the CSV Files.
+    # YOUR CODE HERE!
+
+    while True:
+        csv_file_name = questionary.text(
+            "Enter the path and name for the file to save?"
+        ).ask()
+        if len(csv_file_name) > 1:
+            break
+
+    while True:
+        header_option = questionary.text("Would you like a header (y/n)").ask()
+        if header_option == "y" or header_option == "n":
+            break
+
+    qualifying_loans_header = [
+        "Lender",
+        "Max Loan" "Amount",
+        "Max LTV",
+        "Max DTI",
+        "Min Credit Score",
+        "Interest Rate",
+    ]
+    if header_option == "n":
+        save_csv(csv_file_name, qualifying_loans, header=None)
+    else:
+        save_csv(csv_file_name, qualifying_loans, header=qualifying_loans_header)
+```
