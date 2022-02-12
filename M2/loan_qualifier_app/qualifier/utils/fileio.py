@@ -31,20 +31,21 @@ def load_csv(csvpath):
 
 
 # PP 02/11/2022 - added function to save a CSV based on user requirements
+# PP 02/12/2022 - modified docstring
 
 
-def save_csv(csvpath, list, header=None):
+def save_csv(csvpath, list, header_option=None):
     """
-    Write a CSV the contains the rows in the supplied lists
+    Write a CSV that contains the rows in the supplied lists
 
     Args:
-        csvpath (Path): The CSV file path.
-        data (list of lists): A list of the rows of data for the CSV file.
-        header (list): An optional header for the CSV.
+        csvpath (Path): The file path.
+        list : A list of the rows of data for the CSV file.
+        header (list): An header for the CSV.
 
     """
     with open(csvpath, "w", newline="") as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=",")
-        if header:
-            csvwriter.writerow(header)
+        if header_option:
+            csvwriter.writerow(header_option)
         csvwriter.writerows(list)

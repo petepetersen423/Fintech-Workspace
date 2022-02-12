@@ -6,9 +6,11 @@ This is a command line application to match applicants with qualifying loans.
 Example:
     $ python app.py
 """
-from cgitb import small
-import csv
-from email import header
+# Removong unused imports
+# from cgitb import small
+# import csv
+# from email import header
+
 import sys
 import fire
 import questionary
@@ -36,6 +38,7 @@ def load_bank_data():
     """
 
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
+
     csvpath = Path(csvpath)
     if not csvpath.exists():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
@@ -66,6 +69,7 @@ def get_applicant_info():
 
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
+
     """Determine which loans the user qualifies for.
 
     Loan qualification criteria is based on:
@@ -114,9 +118,10 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+
     while True:
         csv_file_name = questionary.text(
-            "What would you like to name the data file?"
+            "Enter the path and name for the file to save?"
         ).ask()
         if len(csv_file_name) > 1:
             break
