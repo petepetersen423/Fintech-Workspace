@@ -2,7 +2,9 @@
 
 ![Loan Qualifier Prompts](Images/loan_qual_logo.jpg)
 
-Loan Qualifier is an applications designed to quickly and easily retrieve a list of loans for which they are qualified.  The applications will prompt the user for input the application need in order to make the retieval of the qualifying loans.   The application will ask the user for location of thr `daily_rate_sheet` of loans from various lenders.  Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.
+Loan Qualifier is an applications designed to quickly and easily retrieve a list of loans for which they are qualified.  The applications will prompt the user for input the application need in order to make the retieval of the qualifying loans.   The application will ask the user for location of thr `daily_rate_sheet` of loans from various lenders.  
+
+**New in this Update:**  Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.
 
 ---
 
