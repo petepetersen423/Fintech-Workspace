@@ -123,7 +123,7 @@ def save_qualifying_loans(qualifying_loans):
 
     while True:
         header_option = questionary.text("Would you like a header (y/n)").ask()
-        if small(header_option) == "y" or header_option == "n":
+        if header_option == "y" or header_option == "n":
             break
 
     qualifying_loans_header = [
@@ -134,7 +134,7 @@ def save_qualifying_loans(qualifying_loans):
         "Min Credit Score",
         "Interest Rate",
     ]
-    if small(header_option) == "n":
+    if header_option == "n":
         save_csv(csv_file_name, qualifying_loans, header=None)
     else:
         save_csv(csv_file_name, qualifying_loans, header=qualifying_loans_header)
