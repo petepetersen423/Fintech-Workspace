@@ -4,7 +4,12 @@
 
 Loan Qualifier is an applications designed to quickly and easily retrieve a list of loans for which they are qualified.  The applications will prompt the user for input the application need in order to make the retieval of the qualifying loans.   The application will ask the user for location of thr `daily_rate_sheet` of loans from various lenders.  
 
-**New in this version 1.1:**  Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.  The questions will default to convenient values.
+**New in this version 1.1:**  Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.  The questions will default to convenient values. Added command line argument `save_file='n'`to supress file save function and and related prompts.  To run the **app,py** program with the option CLI argument, use the following syntax.
+
+
+```
+python app.py save_file = "n"
+```
 
 ---
 

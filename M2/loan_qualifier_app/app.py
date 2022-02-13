@@ -114,7 +114,9 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 
-def save_qualifying_loans(qualifying_loans):
+def save_qualifying_loans(
+    qualifying_loans, header_option,
+):
     """Saves the qualifying loans to a CSV file.
 
     Args:
@@ -163,7 +165,10 @@ def save_qualifying_loans(qualifying_loans):
         save_csv(csv_file_name, qualifying_loans, header_option == None)
 
 
-def run():
+# PP 02/13/2022 updated run function to accept fire CLI argument to handel save function supression
+
+
+def run(save_file=None, header_option=True):
     """The main function for running the script."""
 
     # Load the latest Bank data
@@ -177,9 +182,12 @@ def run():
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
 
-    # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
+    if save_file == "y":
+
+        # Save qualifying loans
+        save_qualifying_loans(qualifying_loans, header_option)
 
 
 if __name__ == "__main__":
+
     fire.Fire(run)
