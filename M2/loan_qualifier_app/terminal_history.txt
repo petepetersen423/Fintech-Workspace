@@ -1,0 +1,54 @@
+  
+  362  clear
+  363* git commit -m "Describe your commit here"Initial commit for M2 Challenge - Loan Qual Modification"\n
+  364* git commit -m "Initial commit for M2 Challengee"\n
+  365* git push
+  366* git remote -v
+  367* git add .
+  368* git commit -m "Add save functions to fileio.py and questionary prompt in app.py fir file save info "\n
+  369* git push
+  370* git add .
+  371* git commit -m "Add questionary prompts and traps for input "\n
+  372* python app.py --csvfilename = "test.csv" 
+  373* python app.py --csvfilename = "./data/daily_rate_sheet.csv" 
+  374  /Users/pete/opt/anaconda3/envs/dev/bin/python /Users/pete/Documents/Fintech-Workspace/M2/loan_qualifier_app/app.py
+  375  python app.py --csvpathe = "./data/daily_rate_sheet.csv" 
+  376  ls
+  377  cd M2
+  378  ls
+  379  cd loan_qualifier_app
+  380  ls
+  381  python app.py --csvpathe = "./data/daily_rate_sheet.csv" 
+  382  python app.py --csvpath = "./data/daily_rate_sheet.csv" 
+  383  python app.py
+  384  git add .
+  385  git commit -m "bug fixes in save function"
+  386  git push
+  387  python app.py 
+  388  python app.py
+  389  git add.
+  390  git add .
+  391  git commit -m "more bug fixes in funtion for header test"
+  392  git push
+  393  git add .
+  394  git commit -m "add new image showing new promptst"
+  395  git pusg
+  396  git push
+  397* pip
+  398  git .add
+  399  git add .
+  400  git commit -m "adding comments and progress on markdown""
+  401  git commit -m "adding comments and progress on markdown"
+  402  git push
+  403  git add .
+  404  git commit -m "added release note in markdown""
+  405  git commit -m "added release note in markdown"
+  406  git push
+  407  git add.
+  408  git add .
+  409  git commit -m "adding git ignore to exclude test output"
+  410  git push
+  411  python app.py
+  412  git add .
+  413  git commit -m "refactor with .confirm and Bools for options"
+  414  git push
