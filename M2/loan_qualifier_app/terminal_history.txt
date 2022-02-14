@@ -1,4 +1,315 @@
-  
+   50  git remote
+   51  git@github.com:petepetersen423/pepperdine.git
+   52  cd ..
+   53  cd ,,
+   54  exit
+   55  ls
+   56  cd pepperdine
+   57  git push
+   58  git pull
+   59  cd ..
+   60  ls
+   61  cd pepperdine
+   62  git push
+   63  git
+   64  git reset
+   65  ls
+   66  git push
+   67  git commit
+   68  ls
+   69  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+   70  jupyter lab
+   71  cd ..
+   72  ls
+   73  git push
+   74  cd ..
+   75  ls
+   76  cd Fintech-Workspace
+   77  ls
+   78  fit
+   79  git
+   80  git clone
+   81  git clone https://github.com/petepetersen423/Fintech-Workspace
+   82  cd D
+   83  cd ..
+   84  cd !
+   85  cd ~
+   86  ls
+   87  cd Documents
+   88  ls
+   89  git clone https://github.com/petepetersen423/Fintech-Workspace
+   90  cd Fintech-Workspace
+   91  ls
+   92  git clone https://pepperdine.bootcampcontent.com/pepperdine-coding-bootcamp/PEPP-VIRT-FIN-PT-01-2022-U-B.git
+   93  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+   94  ls
+   95  cd ..
+   96  git push
+   97  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+   98  git
+   99  git remote -v
+  100  git remote set-url https://github.com/petepetersen423/PEPP-VIRT-FIN-PT-01-2022-U-B
+  101  git remote set-url https://pepperdine.bootcampcontent.com/pepperdine-coding-bootcamp/PEPP-VIRT-FIN-PT-01-2022-U-B/-/tree/main/02-Financial-Applications-Python
+  102  git remote
+  103  git remote -v
+  104  git push
+  105  git pull
+  106  git push
+  107  git remote -v
+  108  git reset
+  109  git push
+  110  ls
+  111  git
+  112  git branch
+  113  ls
+  114  cd Documents
+  115  ls
+  116  cd P
+  117  cd Fintech-Workspace
+  118  ls
+  119  git pull
+  120  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  121  ls
+  122  git pull
+  123  cd ..
+  124  rem PEPP-VIRT-FIN-PT-01-2022-U-B
+  125  ls
+  126  git clone https://pepperdine.bootcampcontent.com/pepperdine-coding-bootcamp/PEPP-VIRT-FIN-PT-01-2022-U-B/-/tree/main/02-Financial-Applications-Python
+  127  git clone https://github.com/petepetersen423/PEPP-VIRT-FIN-PT-01-2022-U-B
+  128  ls
+  129  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  130  ls
+  131  cd ..
+  132  ld
+  133  ls
+  134  git clone https://pepperdine.bootcampcontent.com/pepperdine-coding-bootcamp/PEPP-VIRT-FIN-PT-01-2022-U-B.git
+  135  ls
+  136  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  137  ls
+  138  rm .
+  139  rem .
+  140  ls
+  141  rem README.md
+  142  del README.md
+  143  ls -a
+  144  rm. git
+  145  rm -f README.md
+  146  ls
+  147  cd ..
+  148  ls
+  149  git clone https://pepperdine.bootcampcontent.com/pepperdine-coding-bootcamp/PEPP-VIRT-FIN-PT-01-2022-U-B.git
+  150  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  151  ls
+  152  re -f .git
+  153  rm -f .git
+  154  rmdir .git
+  155  CD ~
+  156  cd ..
+  157  ls
+  158  cd ~
+  159  ls
+  160  cd Documents
+  161  ls 
+  162  git clone https://pepperdine.bootcampcontent.com/pepperdine-coding-bootcamp/PEPP-VIRT-FIN-PT-01-2022-U-B.git
+  163  cd Fintech-Workspace
+  164  ls
+  165  git push
+  166  ls
+  167  git
+  168  git add .
+  169  git submodule add PEPP-VIRT-FIN-PT-01-2022-U-B
+  170  git submodule add /PEPP-VIRT-FIN-PT-01-2022-U-B
+  171  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  172  ls
+  173  git add .
+  174  git remote -v
+  175  ls
+  176  ls -a
+  177  rmdir -f .git
+  178  rm -f .git
+  179  rmdir .git
+  180  rm -f .git
+  181  rm .git
+  182  cd ..
+  183  ls
+  184  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  185  git add .
+  186  git submodule
+  187  cd ~
+  188  ls
+  189  cd Doc
+  190  cd Documents
+  191  ls
+  192  cd Fintech-Workspace
+  193  ls
+  194  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  195  ls
+  196  cd ..
+  197  git remote orgin https://github.com/petepetersen423/Fintech-Workspace
+  198  git clone https://github.com/petepetersen423/Fintech-Workspace
+  199  ls
+  200  cd Fin
+  201  cd Fintech-Workspace/
+  202  cd ..
+  203  cd ~
+  204  cd Documents
+  205  ls
+  206  git clone https://github.com/petepetersen423/Fintech-Workspace
+  207  cd Fintech-Workspace
+  208  ls
+  209  git add .
+  210  git remote -v
+  211  git push
+  212  cd ..
+  213  ls
+  214  cd PEPP
+  215  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  216  la
+  217  ls
+  218  git pull
+  219  cd ~
+  220  cd Documents
+  221  cd Fintech-Workspace
+  222  ls
+  223  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  224  git remote -v
+  225  cd ..
+  226  git add .
+  227  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  228  cd M2
+  229  ls
+  230  cd 02_Loan_Qualifier_Filtering_Data
+  231  ls
+  232  cd Unsolved
+  233  ls
+  234  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  235  clear
+  236  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  237  clear
+  238  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  239  git add .
+  240  ls
+  241  cd m2
+  242  ls
+  243  git add .
+  244  cd 01_Modularize_Your_Loan_Qualifier_Application
+  245  ls
+  246  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  247  clear
+  248  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  249  usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/utils/calculators.py
+  250  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/utils/fileio.py
+  251  clear
+  252  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/02_Loan_Qualifier_Filtering_Data/Unsolved/app.py
+  253  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/01_Modularize_Your_Loan_Qualifier_Application_Part_2/Unsolved/app.py
+  254  ped
+  255  cd ..
+  256  ls
+  257  touch fintech-file.txt
+  258  ls
+  259  cd ..
+  260  pip install fire
+  261  conda activate dev
+  262  pip
+  263  conda
+  264  path
+  265  pip
+  266  python3
+  267  which pip
+  268  where pip
+  269  pip
+  270  cd /usr
+  271  ls
+  272  cd/bin
+  273  cd bin
+  274  pip
+  275  ls
+  276  which pip
+  277  pip
+  278  pwd
+  279  ls
+  280  ls -l
+  281  ls -a
+  282  code .zshrc
+  283  which conda
+  284  conda
+  285  cd opt/anaconda3/etc
+  286  ls
+  287  pwd
+  288  exit
+  289  which conda
+  290  conda info
+  291  pip 
+  292  pip install fire
+  293  /Users/pete/opt/anaconda3/bin/python -m pip install --upgrade pip
+  294  pip install fire
+  295  cd Documents
+  296  cd PEPP-VIRT-FIN-PT-01-2022-U-B
+  297  ls
+  298  git pull
+  299  jupyter notenook
+  300  pip install pandas
+  301  pip install numpy
+  302  ls
+  303  jupyter lab
+  304  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/cli.py
+  305  pip install fire
+  306  /usr/local/bin/python3 /Users/pete/Documents/Fintech-Workspace/M2/cli.py
+  307  conda activate dev
+  308  /Users/pete/opt/anaconda3/bin/python /Users/pete/Documents/Fintech-Workspace/M2/cli.py
+  309  ls
+  310  cd ..
+  311  ls
+  312  python3 cli.py
+  313  ls
+  314  cd Fintech-Workspace
+  315  ls
+  316  cd m2
+  317  ls
+  318  python3 cli.py
+  319  /Users/pete/opt/anaconda3/bin/python /Users/pete/Documents/Fintech-Workspace/M2/cli.py
+  320  python cli.py --pants=True
+  321  cd 01_Adding_Fire_to_the_Loan_Qualifier_App
+  322  ls
+  323  cd Unsolved
+  324  ls
+  325  python app.py
+  326  credit_score
+  327  python app.py --credit_score=750
+  328  clear
+  329  python app.py --credit_score=750
+  330  python app.py --credit_score=750 --debt=5000 --income == 20000
+  331  python app.py --credit_score=750 --debt=5000 --income = 20000
+  332  python app.py --credit_score=750 --debt=5000 --income=20000
+  333  pip install questionary
+  334  /Users/pete/opt/anaconda3/bin/python /Users/pete/Documents/Fintech-Workspace/M2/dialog.py
+  335  /Users/pete/opt/anaconda3/envs/dev/bin/python /Users/pete/Documents/Fintech-Workspace/M2/dialog.py
+  336  /Users/pete/opt/anaconda3/envs/dev/bin/python /Users/pete/Documents/
+  337  python dialog.py
+  338  cd ..
+  339  ls
+  340  python dialog.py
+  341  cd 02_Adding_questionary_to_Loan_Qualifier
+  342  ls
+  343  cd solved
+  344  ls
+  345  python app.py --credit_score=750 --debt=5000 --income=20000
+  346  git config --list
+  347  ls
+  348  cd ..
+  349  ls
+  350  cd loan_qualifier_app
+  351  ls
+  352  conda activate dev
+  353  clear
+  354  conda activate dev
+  355  ls
+  356  git add.
+  357  git add .
+  358  source /Users/pete/opt/anaconda3/bin/activate
+  359  conda activate dev
+  360  /Users/pete/opt/anaconda3/envs/dev/bin/python /Users/pete/Documents/Fintech-Workspace/M2/loan_qualifier_app/app.py
+  361  d
   362  clear
   363* git commit -m "Describe your commit here"Initial commit for M2 Challenge - Loan Qual Modification"\n
   364* git commit -m "Initial commit for M2 Challengee"\n
@@ -52,3 +363,19 @@
   412  git add .
   413  git commit -m "refactor with .confirm and Bools for options"
   414  git push
+  415  history 50 > terminal_history.txt
+  416  history?
+  417  python app.py --save_y_n = True --csv_file_name = "./data/my_loans.csv" --header_option = True
+  418  python app.py --save_y_ ='True'
+  419  python app.py --save_y_n ='True'
+  420  python app.py --save_file="y"
+  421  python app.py --credit_score=750
+  422  python app.py --save_file="y"
+  423  python app.py --save_file="n"
+  424  python app.py --save_file="y"
+  425  git add .
+  426  git commit -m "Adding fire to run() for file save option"
+  427  git push
+  428  git pull
+  429  git help
+  430  git pull
