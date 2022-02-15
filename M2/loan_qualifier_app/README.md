@@ -5,13 +5,13 @@
 Loan Qualifier is an applications designed to quickly and easily retrieve a list of loans for which a user is qualified. The application will prompt the user for input the needed in order to make the retieval of the qualifying loans possible. The application will ask the user for location of the `daily_rate_sheet` of loans from various lenders.  
 
 **New in this version 1.1:**  
-1.  Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.  
-2.  The questionss will default to convenient values where possible. 
-3   Added command line argument `save_file='n'`to supress file save function and and related prompts.  
-4   To run the **app,py** program with the      option CLI argument, use the following syntax.
+
+1. Once the qualifying loans list is created the user will be prompted whether to save the file and or to include an optional header.
+2. The questionss will default to convenient values where possible.  
+3. Added command line argument `save_file='n'`to supress file save function and and related prompts.
+4. To run the **app,py** program with the optional CLI argument, use the following syntax.  
 
 **python app.py save_file = "n"**
-
 
 ---
 
@@ -19,11 +19,9 @@ Loan Qualifier is an applications designed to quickly and easily retrieve a list
 
 This project uses python 3.7 with the following packages:
 
-
 * [fire 4.0](https://pypi.org/project/fire/) - Python Fire is a library for automatically generating command line interfaces (CLIs) with a single line of code.  It will turn any Python module, class, object, function, etc. (any Python component will work!) into a CLI. It’s called Fire because when you call Fire(), it fires off your command.
 
-
-* [questionary 1.10.0](https://pypi.org/project/questionary/) - Questionary is a Python library for effortlessly building pretty command line interfaces 
+* [questionary 1.10.0](https://pypi.org/project/questionary/) - Questionary is a Python library for effortlessly building pretty command line interfaces
 
 ---
 
@@ -54,9 +52,9 @@ Upon launching the loan qualifier application you will be greeted with the follo
 
 ## Contributors
 
-Pete Petersen
-Tarek Atwan
-Anand Krishnan
+Pete Petersen  
+Tarek Atwan  
+Anand Krishnan  
 
 ---
 
@@ -93,6 +91,7 @@ MIT
             csvwriter.writerow(header_option)
         csvwriter.writerows(list)
 ```
+
 ### 2.  Added interactive function for save implementation in app.py
 
 ```def save_qualifying_loans(qualifying_loans):
