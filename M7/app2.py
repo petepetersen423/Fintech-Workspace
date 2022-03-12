@@ -23,22 +23,37 @@ def confirm_tables(engine):
     print(f"The tables in the database are: {tables}")
 
 
+def read_table(engine, table_name):
+    return pd.read_sql_table(table_name, con=engine)
+
+
+def read_top_n(engine, table_name, number_results=1):
+    top_n_query = """
+    SELECT * from {table_name}
+    ORDER BY AAPL DESC
+    LIMIT {number_results};
+    """
+    return pd.read_sql_query(top_n_query, con=engine)
+
+
 def run():
     """The main function for running the application."""
 
-    # Dynamically load data into a DataFrame
-    csv_name = questionary.text("What is the name of your CSV file?").ask()
-    csvpath = Path(csv_name)
-    stocks_dataframe = pd.read_csv(csvpath)
+    table_name = questionary.text("What table would you like to display?").ask()
+    table_dataframe = read_table(engine, table_name)
+    print(table_dataframe)
 
-    # Prompt the user for the table name
-    table_name = questionary.text("What name would you like to use for your table?").ask()
-
-    # Create the table in the database
-    create_table(engine, table_name, stocks_dataframe)
-
-    # Confirm the table in the database
-    confirm_tables(engine)
 
 if __name__ == "__main__":
-    fire.Fire(run
+    fire.Fire(run)
+
+
+def run():
+    """The main function for running the application."""
+
+    top_n_results = read_top_n(engine, "stocks", 1)
+    print("The top 1 result was: ", top_n_results)
+
+
+if __name__ == "__main__":
+    fire.Fire(run)

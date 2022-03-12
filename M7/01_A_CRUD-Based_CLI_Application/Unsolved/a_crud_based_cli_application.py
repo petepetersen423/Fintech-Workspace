@@ -5,7 +5,7 @@ import pandas as pd
 from pathlib import Path
 
 # Create a temporary sqlite database
-database_connection_string = 'sqlite:///cruddy_database.db'
+database_connection_string = "sqlite:///cruddy_database.db"
 
 # Create an engine to interact with the database
 engine = sqlalchemy.create_engine(database_connection_string)
@@ -19,7 +19,7 @@ The table is replaced by the new data if it already exists.
 
 
 def create_table(engine, table_name, table_data_df):
-    table_data_df.to_sql(table_name, engine, index=False, if_exists='replace')
+    table_data_df.to_sql(table_name, engine, index=False, if_exists="replace")
 
 
 """READ
@@ -51,6 +51,15 @@ In this section, you will complete the UPDATE operation.
 # @TODO: YOUR CODE HERE!
 
 
+def update_data(engine, table_name, column, old_value):
+    update_sql = """
+        UPDATE {table_name}
+        SET {column} = {new_value}
+        WHERE {column} = {old_value}
+        """
+    engine.execute(update_sql)
+
+
 """DELETE
 
 In this section, you will complete the DELETE operation.
@@ -67,19 +76,26 @@ In this section, you will complete the DELETE operation.
 # @TODO: YOUR CODE HERE!
 
 
+def delete_data(engine, table_name, column, value):
+    delete_sql = """
+        DELETE FROM {table_name}
+        WHERE {column} = {value}
+    """
+    engine.execute(delete_sql)
+
+
 def run():
     print("Generating test data for the database...")
     # Create a test DataFrame
-    stocks_dataframe = pd.DataFrame({'AAPL': [1, 2], 'GOOG': [3, 4]})
+    stocks_dataframe = pd.DataFrame({"AAPL": [1, 2], "GOOG": [3, 4]})
     # Create the database table called 'stocks'
-    create_table(engine, 'stocks', stocks_dataframe)
+    create_table(engine, "stocks", stocks_dataframe)
 
     cruddy_cli_running = True
 
     while cruddy_cli_running:
         choice = questionary.select(
-            "What do you want to do?",
-            choices=["Read", "Update", "Delete", "Quit"]
+            "What do you want to do?", choices=["Read", "Update", "Delete", "Quit"]
         ).ask()
 
         if choice == "Read":
@@ -92,14 +108,20 @@ def run():
             # 2. Prompt the user for column to update.
             column = questionary.text("What column would you like to update?").ask()
             # 3. Prompt the user for the old value to find.
-            old_value = questionary.text("What is the old value that you want to update?").ask()
+            old_value = questionary.text(
+                "What is the old value that you want to update?"
+            ).ask()
             # 4. Prompt the user for the new value.
-            new_value = questionary.text("What is the new value that you want to update?").ask()
+            new_value = questionary.text(
+                "What is the new value that you want to update?"
+            ).ask()
             # 5. Call the UPDATE operation
             update_data(engine, table_name, column, old_value, new_value)
         elif choice == "Delete":
             # 1. Prompt the user for a table.
-            table_name = questionary.text("What table would you like to delete data from?").ask()
+            table_name = questionary.text(
+                "What table would you like to delete data from?"
+            ).ask()
             # 2. Prompt the user for the column.
             column = questionary.text("What column is the data in?").ask()
             # 3. Prompt the user for  value to find.
