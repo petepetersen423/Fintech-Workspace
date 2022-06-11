@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newCoin",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isBuy",
+						"type": "bool"
+					}
+				],
+				"name": "updateTrade",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"chapter.sol": "LatestTrade"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"chapter.sol": {
+			"keccak256": "0xe20019d8bf23a211e02db8740bbbc40bef92b87c0134598efdf40b7514cd187b",
+			"urls": [
+				"bzz-raw://a2ecfe4e742f84d8c015953fddb37b24734e4b9e0df15dac39921fe3ae2f8f3e",
+				"dweb:/ipfs/QmZ4m1CvVH2JBC7qN3GeJuYdDoR1kF4Tn1e55Bk6tntekv"
+			]
+		}
+	},
+	"version": 1
+}
