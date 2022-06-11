@@ -18,7 +18,8 @@ Instructions
 
 3. In `returns`, specify the types of data that the `getInfo` function will return. Return the values of all the variables that you specified before, such as those of `address`, `isNewAccount`, `accountBalance`, `customerName`, and `customerLastName`.
 
-    > **Hint** Remember to surround multiple return values with parentheses, and remember to add the semicolons!
+    > **Hint** Remember to surround multiple return values with parentheses, 
+    and remember to add the semicolons!
 
 4. Because you no longer need the default values for the customer info, remove them.
 
@@ -35,18 +36,19 @@ Instructions
 
     > **Hint** Remember that all the setter does is set the new values of the customer variables.
 
-6. Compile your smart contract. If an error occurs, review your code, and make the necessary changes for a successful compilation.
+6. Compile your smart contract. If an error occurs, review your code, 
+and make the necessary changes for a successful compilation.
 
 */
 
 pragma solidity ^0.5.0;
 
 contract CustomerAccount {
-    address owner = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-    bool isNewAccount = true;
-    uint256 accountBalance = 10000;
-    string customerName = "Jordan";
-    string customerLastName = "Habib";
+    address owner;
+    bool isNewAccount;
+    uint256 accountBalance;
+    string customerName;
+    string customerLastName;
 
     function getInfo()
         public
@@ -66,5 +68,20 @@ contract CustomerAccount {
             customerName,
             customerLastName
         );
+    }
+
+    function setInfo(
+        address newOwner,
+        bool newAccountStatus,
+        uint256 newAccountBalance,
+        string memory newCustomerName,
+        string memory newCustomerLastName
+    ) public {
+        // set user data here
+        owner = newOwner;
+        isNewAccount = newAccountStatus;
+        accountBalance = newAccountBalance;
+        customerName = newCustomerName;
+        customerLastName = newCustomerLastName;
     }
 }

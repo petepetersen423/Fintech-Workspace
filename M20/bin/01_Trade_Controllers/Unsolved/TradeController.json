@@ -1,0 +1,625 @@
+{
+    "contractName": "TradeController",
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "currentPrice",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "buyAnyway",
+                    "type": "bool"
+                }
+            ],
+            "name": "makeTrade",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"currentPrice\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"buyAnyway\",\"type\":\"bool\"}],\"name\":\"makeTrade\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/pete/Documents/Fintech-Workspace/M20/01_Trade_Controllers/Unsolved/trade_controller.sol\":\"TradeController\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/pete/Documents/Fintech-Workspace/M20/01_Trade_Controllers/Unsolved/trade_controller.sol\":{\"keccak256\":\"0xc864f7f7a24681985a3216ba38476552eb7e5d3339fe62fd5e477fb96bedda80\",\"urls\":[\"bzz-raw://45ff9ff342d66578d7c13a2b3ecd9673815375ee2ff227433bf27316fea85193\",\"dweb:/ipfs/QmYgRz7dU2qrRycrJWoxRbNq5m8BcVhSVf7mcsfgShEU2H\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506101d4806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806399418ee814610030575b600080fd5b6100556004803603604081101561004657600080fd5b50803590602001351515610057565b005b6000548210806100645750805b1561009e576040805180820190915260038082526242757960e81b602090920191825261009391600191610104565b506000829055610100565b6000548211156100d3576040805180820190915260048082526314d95b1b60e21b602090920191825261009391600191610104565b60408051808201909152600480825263121bdb1960e21b60209092019182526100fe91600191610104565b505b5050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061014557805160ff1916838001178555610172565b82800160010185558215610172579182015b82811115610172578251825591602001919060010190610157565b5061017e929150610182565b5090565b61019c91905b8082111561017e5760008155600101610188565b9056fea265627a7a72315820c416ca7e630b4e55a25d6113a2e4c3be45416c5cb970b66ceb5e6c355b4c807c64736f6c63430005110032",
+    "deployedBytecode": "608060405234801561001057600080fd5b506004361061002b5760003560e01c806399418ee814610030575b600080fd5b6100556004803603604081101561004657600080fd5b50803590602001351515610057565b005b6000548210806100645750805b1561009e576040805180820190915260038082526242757960e81b602090920191825261009391600191610104565b506000829055610100565b6000548211156100d3576040805180820190915260048082526314d95b1b60e21b602090920191825261009391600191610104565b60408051808201909152600480825263121bdb1960e21b60209092019182526100fe91600191610104565b505b5050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061014557805160ff1916838001178555610172565b82800160010185558215610172579182015b82811115610172578251825591602001919060010190610157565b5061017e929150610182565b5090565b61019c91905b8082111561017e5760008155600101610188565b9056fea265627a7a72315820c416ca7e630b4e55a25d6113a2e4c3be45416c5cb970b66ceb5e6c355b4c807c64736f6c63430005110032",
+    "sourceMap": "58:468:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:468:0;;;;;;;",
+    "deployedSourceMap": "58:468:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:468:0;;;;;;;;;;;;;;;;;;;139:385;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;139:385:0;;;;;;;;;:::i;:::-;;;232:13;;217:12;:28;:41;;;;249:9;217:41;213:305;;;274:17;;;;;;;;;;;;;-1:-1:-1;;;274:17:0;;;;;;;;;:9;;:17;:::i;:::-;-1:-1:-1;305:13:0;:28;;;213:305;;;369:13;;354:12;:28;350:168;;;398:18;;;;;;;;;;;;;-1:-1:-1;;;398:18:0;;;;;;;;;:9;;:18;:::i;350:168::-;489:18;;;;;;;;;;;;;-1:-1:-1;;;489:18:0;;;;;;;;;:9;;:18;:::i;:::-;;350:168;139:385;;:::o;58:468::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;58:468:0;;;-1:-1:-1;58:468:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+    "sourcePath": "/Users/pete/Documents/Fintech-Workspace/M20/01_Trade_Controllers/Unsolved/trade_controller.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.5.17+commit.d19bba13"
+    },
+    "ast": {
+        "absolutePath": "/Users/pete/Documents/Fintech-Workspace/M20/01_Trade_Controllers/Unsolved/trade_controller.sol",
+        "exportedSymbols": {
+            "TradeController": [
+                47
+            ]
+        },
+        "id": 48,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.5",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 47,
+                "linearizedBaseContracts": [
+                    47
+                ],
+                "name": "TradeController",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 3,
+                        "name": "previousPrice",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "89:21:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "89:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 5,
+                        "name": "tradeType",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "116:16:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 4,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "116:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 45,
+                            "nodeType": "Block",
+                            "src": "203:321:0",
+                            "statements": [
+                                {
+                                    "condition": {
+                                        "argumentTypes": null,
+                                        "commonType": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        },
+                                        "id": 16,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "argumentTypes": null,
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 14,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "argumentTypes": null,
+                                                "id": 12,
+                                                "name": "currentPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "217:12:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "<",
+                                            "rightExpression": {
+                                                "argumentTypes": null,
+                                                "id": 13,
+                                                "name": "previousPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 3,
+                                                "src": "232:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "src": "217:28:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "||",
+                                        "rightExpression": {
+                                            "argumentTypes": null,
+                                            "id": 15,
+                                            "name": "buyAnyway",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 9,
+                                            "src": "249:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "src": "217:41:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "falseBody": {
+                                        "condition": {
+                                            "argumentTypes": null,
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 28,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "argumentTypes": null,
+                                                "id": 26,
+                                                "name": "currentPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "354:12:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": ">",
+                                            "rightExpression": {
+                                                "argumentTypes": null,
+                                                "id": 27,
+                                                "name": "previousPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 3,
+                                                "src": "369:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "src": "354:28:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "falseBody": {
+                                            "id": 42,
+                                            "nodeType": "Block",
+                                            "src": "475:43:0",
+                                            "statements": [
+                                                {
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 40,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "leftHandSide": {
+                                                            "argumentTypes": null,
+                                                            "id": 38,
+                                                            "name": "tradeType",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 5,
+                                                            "src": "489:9:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_string_storage",
+                                                                "typeString": "string storage ref"
+                                                            }
+                                                        },
+                                                        "nodeType": "Assignment",
+                                                        "operator": "=",
+                                                        "rightHandSide": {
+                                                            "argumentTypes": null,
+                                                            "hexValue": "486f6c64",
+                                                            "id": 39,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "kind": "string",
+                                                            "lValueRequested": false,
+                                                            "nodeType": "Literal",
+                                                            "src": "501:6:0",
+                                                            "subdenomination": null,
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_stringliteral_9e11704c3e9183e08c5af79acdf4b55a8ba53bf1e1777bc4a505b683dad8d3f4",
+                                                                "typeString": "literal_string \"Hold\""
+                                                            },
+                                                            "value": "Hold"
+                                                        },
+                                                        "src": "489:18:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_storage",
+                                                            "typeString": "string storage ref"
+                                                        }
+                                                    },
+                                                    "id": 41,
+                                                    "nodeType": "ExpressionStatement",
+                                                    "src": "489:18:0"
+                                                }
+                                            ]
+                                        },
+                                        "id": 43,
+                                        "nodeType": "IfStatement",
+                                        "src": "350:168:0",
+                                        "trueBody": {
+                                            "id": 37,
+                                            "nodeType": "Block",
+                                            "src": "384:85:0",
+                                            "statements": [
+                                                {
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 31,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "leftHandSide": {
+                                                            "argumentTypes": null,
+                                                            "id": 29,
+                                                            "name": "tradeType",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 5,
+                                                            "src": "398:9:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_string_storage",
+                                                                "typeString": "string storage ref"
+                                                            }
+                                                        },
+                                                        "nodeType": "Assignment",
+                                                        "operator": "=",
+                                                        "rightHandSide": {
+                                                            "argumentTypes": null,
+                                                            "hexValue": "53656c6c",
+                                                            "id": 30,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "kind": "string",
+                                                            "lValueRequested": false,
+                                                            "nodeType": "Literal",
+                                                            "src": "410:6:0",
+                                                            "subdenomination": null,
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_stringliteral_2960d925d7f3fc57a6fc5d05aac27fd1ae17fcf2a31a901375f427c5224e3219",
+                                                                "typeString": "literal_string \"Sell\""
+                                                            },
+                                                            "value": "Sell"
+                                                        },
+                                                        "src": "398:18:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_storage",
+                                                            "typeString": "string storage ref"
+                                                        }
+                                                    },
+                                                    "id": 32,
+                                                    "nodeType": "ExpressionStatement",
+                                                    "src": "398:18:0"
+                                                },
+                                                {
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 35,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "leftHandSide": {
+                                                            "argumentTypes": null,
+                                                            "id": 33,
+                                                            "name": "previousPrice",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 3,
+                                                            "src": "430:13:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "nodeType": "Assignment",
+                                                        "operator": "=",
+                                                        "rightHandSide": {
+                                                            "argumentTypes": null,
+                                                            "id": 34,
+                                                            "name": "currentPrice",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 7,
+                                                            "src": "446:12:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "src": "430:28:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "id": 36,
+                                                    "nodeType": "ExpressionStatement",
+                                                    "src": "430:28:0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "id": 44,
+                                    "nodeType": "IfStatement",
+                                    "src": "213:305:0",
+                                    "trueBody": {
+                                        "id": 25,
+                                        "nodeType": "Block",
+                                        "src": "260:84:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 19,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "argumentTypes": null,
+                                                        "id": 17,
+                                                        "name": "tradeType",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 5,
+                                                        "src": "274:9:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_string_storage",
+                                                            "typeString": "string storage ref"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "=",
+                                                    "rightHandSide": {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "427579",
+                                                        "id": 18,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "string",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "286:5:0",
+                                                        "subdenomination": null,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_stringliteral_85bc0fdda630693f7eb9d27232dd4b373ff0c495943884038449200ada7d93e6",
+                                                            "typeString": "literal_string \"Buy\""
+                                                        },
+                                                        "value": "Buy"
+                                                    },
+                                                    "src": "274:17:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_storage",
+                                                        "typeString": "string storage ref"
+                                                    }
+                                                },
+                                                "id": 20,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "274:17:0"
+                                            },
+                                            {
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 23,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "argumentTypes": null,
+                                                        "id": 21,
+                                                        "name": "previousPrice",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 3,
+                                                        "src": "305:13:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "=",
+                                                    "rightHandSide": {
+                                                        "argumentTypes": null,
+                                                        "id": 22,
+                                                        "name": "currentPrice",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 7,
+                                                        "src": "321:12:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "305:28:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 24,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "305:28:0"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 46,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "makeTrade",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 7,
+                                    "name": "currentPrice",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 46,
+                                    "src": "158:20:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 6,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "158:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 9,
+                                    "name": "buyAnyway",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 46,
+                                    "src": "180:14:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 8,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "180:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "157:38:0"
+                        },
+                        "returnParameters": {
+                            "id": 11,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "203:0:0"
+                        },
+                        "scope": 47,
+                        "src": "139:385:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 48,
+                "src": "58:468:0"
+            }
+        ],
+        "src": "0:527:0"
+    },
+    "functionHashes": {
+        "makeTrade(uint256,bool)": "99418ee8"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "93600",
+            "executionCost": "141",
+            "totalCost": "93741"
+        },
+        "external": {
+            "makeTrade(uint256,bool)": "infinite"
+        }
+    }
+}
